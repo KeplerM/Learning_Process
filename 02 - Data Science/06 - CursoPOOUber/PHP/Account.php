@@ -5,4 +5,10 @@ class Account{
     public $document=string;
     public $email=string;
     public $password=string;
+
+    publicfunction__construct($name, $document){
+        $this->name = $name;
+        $this->document = $document;
+        
+    }
 }
