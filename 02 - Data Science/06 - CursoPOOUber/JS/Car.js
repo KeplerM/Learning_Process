@@ -1,4 +1,4 @@
-class Car{
+class Car {
 
     constructor(license, driver){
         this.id;
@@ -7,10 +7,11 @@ class Car{
         this.passenger;
     }
 
-    printDataCar(){ 
-        console.table(this.driver)
+    printDataCar() { 
+        console.log(this.driver)
         //imprimirá una tabla con todos los datos.
         console.log(this.driver.name)
         console.log(this.driver.document)
+        
     }
 }
