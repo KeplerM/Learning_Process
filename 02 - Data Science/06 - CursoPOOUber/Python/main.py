@@ -1,13 +1,18 @@
+# from Python.uberX import UberX
 from car import Car
 from account import Account
+from uberX import UberX
+from uberPool import UberPool
 
 if __name__=="__main__":
     print("Hola Mundo")
 
-    car = Car("AMS234", Account("Andres Herrera", "ANDA876"))
+    car = UberX("AMS234", Account("Andres Herrera", "ANDA876"), "Chevrolte", "Spark")
     print(vars(car))
     print(vars(car.Driver))
 
-    car2 = Car("QWE567", Account("Martha", "MDAN456"))
+    car2 = UberPool("QWE567", Account("Martha", "MDAN456"), "Chevrolet", "Aveo" )
     print(vars(car2))
     print(vars(car2.Driver))
+
+    
