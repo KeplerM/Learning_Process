@@ -8,10 +8,17 @@ def divisors(num):
 
 
 def run():
-    num = int(input("Ingrese un numero: "))
-    print(divisors(num))
-    print("Termino mi programa")
+    #while True:
+        try:        
+            num = int(input("Ingrese un numero: "))
+            if num < 0:
+                raise ValueError("No se puede ingresar un número negativo")
+            print(divisors(num))
+            print("Termino mi programa")
 
+        except ValueError as ve:
+            print(ve)
+            return False    
 
 if __name__ == '__main__':
     run()
